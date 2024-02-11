@@ -65,15 +65,18 @@ $('.header__navigation-burger').click(function() {
    $(".header").toggleClass('header_margin');
 });
 */
+
 let navDesktop = document.querySelector('.nav-desktop');
 
+
 let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-if ( width < 321 ) {
+if ( width < 1025 ) {
 	navDesktop.classList.remove('nav-desktop');
 }
 
 
 let toolbar = document.querySelector('.toolbar');
+let header = document.querySelector('.header');
 
 toolbar.onclick = function(event) {
   let target = event.target.closest('.btn-header-window');
@@ -81,13 +84,14 @@ toolbar.onclick = function(event) {
  // if (target.tagName != 'A') return;
   // added
   document.querySelectorAll('.modal-window').forEach( modal => {
-  	modal.id !== target.dataset.target && modal.classList.remove('modal-window--active')
+  	modal.id !== target.dataset.target && modal.classList.remove('modal-window--active');
+    
   })
   // -----
   let modalActive = document.querySelector('#' + target.dataset.target);
   modalActive.classList.toggle('modal-window--active');
+//  header.classList.toggle('header--fixed');
 };
-
 
 
 /* sliding */
@@ -293,6 +297,47 @@ new SwiperReviews('.reviews__block', {
 /* LOGIN FORM */
 //this function to applay your animate style
 
+let width_1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+function animate_Me(target, moveMe){
+  $(target).focus(function(){
+    
+    if ( width_1 < 321 ) {
+      $(moveMe).animate({"marginLeft":"220px"});
+    }
+    else {
+
+    $(moveMe).animate({"marginLeft":"256px"});
+  }
+  });
+  $(target).focusout(function(){
+    $(moveMe).animate({"marginLeft":"34px"});
+  });
+}
+
+
+animate_Me("input[type='text']", ".fa-user");
+animate_Me("input[placeholder='Your Last Name']", ".fa-user-plus");
+animate_Me("input[type='email']", ".fa-envelope");
+animate_Me("input[type='password']", ".fa-lock");
+animate_Me("input[placeholder='Confirm Password']", ".fa-refresh");
+/*
+let width_1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if ( width_1 < 321 ) {
+	function animate_Me_1(target, moveMe){
+    $(target).focus(function(){
+      $(moveMe).animate({"marginLeft":"200px"});
+    });
+    $(target).focusout(function(){
+      $(moveMe).animate({"marginLeft":"34px"});
+    });
+  }
+}
+*/
+
+
+
+/*
 function animate_Me(target, moveMe){
   $(target).focus(function(){
     $(moveMe).animate({"marginLeft":"256px"});
@@ -300,7 +345,6 @@ function animate_Me(target, moveMe){
   $(target).focusout(function(){
     $(moveMe).animate({"marginLeft":"34px"});
   });
-
 }
 
 animate_Me("input[type='text']", ".fa-user");
@@ -308,4 +352,6 @@ animate_Me("input[placeholder='Your Last Name']", ".fa-user-plus");
 animate_Me("input[type='email']", ".fa-envelope");
 animate_Me("input[type='password']", ".fa-lock");
 animate_Me("input[placeholder='Confirm Password']", ".fa-refresh");
+*/
+
 

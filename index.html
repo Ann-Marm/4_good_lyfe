@@ -82,8 +82,13 @@
 <!-- headernorightleft.css -->  
     <header class="header toolbar">
         <div class="container header__container">
+          
+            <a href="" class="header__logo">
+                <img src="images/logo.svg" alt="Logo GoodLyfe" class="header__logo_img">
+            </a>
+           
 
-            <a href="#"><img src="images/logo.svg" alt="Logo GoodLyfe" class="header__logo"></a>
+
             
             <nav class="header__navigation navigation modal-window nav-desktop" id="navigationBurgerId">
                 <ul class="navigation__list">
@@ -101,21 +106,26 @@
                     </li>
                     <li class="navigation__item">
                         <a href="" class="navigation__link">Free Trial</a>
-                    </li>                   
+                    </li>  
                 </ul>
             </nav>
+
 
             <div class="header__search search">
                 <button class="search__btn btn-header-window"  data-target="searchId">
                     <span class="search__btn-text">Search</span>
                 </button>
+                
                 <div class="search__wrapper modal-window" id="searchId">
                     <form class="search__form">
                         <input type="text" placeholder="Search..." maxlength="240">
                         <button class="search__form-button">Search</button>
                     </form>
                 </div>
-            </div> 
+
+            </div>     
+
+      
 
            <!-- <form class="form" >login</form> -->
             
@@ -183,15 +193,14 @@
                 </form>
                 <!--End login form-->
                     <!-- LOGIN FORM END -->
-                
-                
                     
                 </div>
             </div>
 
             <button class="header__navigation-burger btn-header-window" data-target="navigationBurgerId"></button>
-    
+
         </div>
+
     
     </header> 
 <!-- headernorightleft.css end-->  

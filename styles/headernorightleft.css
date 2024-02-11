@@ -1,13 +1,32 @@
 .header {
     background-color: #E43071;
-    position: relative;
+   /* position: relative;*/
+
+    position: fixed;
+ 
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 101px;
 }
 
+/*
+.header--fixed {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+*/
 .header__container {
-  /*  width: 1440px;*/
+    /*width: 1440px;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+  /*  justify-content: flex-start;*/
     align-items: center;
 }
 
@@ -21,23 +40,49 @@
 }
 
 .header__logo {
+    display: block;
+    min-width: 157px;
+    width: 187px;
+    margin: 31px 172px 26px 36px;
+    /* margin-right: 200px;*/
+    margin-right: 8%;
+}
+
+.header__logo_img {
     width: 187px;
     height: 44px;
-    margin: 31px 172px 26px 36px;
+}
+
+.header__navigation {
+    width: 45%;
+ /*   border: 1px solid green;*/
+    margin-right: 2%;
 }
 
 .navigation__list {
     display: flex;
+   /* min-width: 400px;*/
+    
+    justify-content: flex-start;
+    justify-content: space-between;
     color: #FFF;
+    /*gap: 76px;*/
+   /* gap: 26%;*/
+
+ /*  margin-left: 8%;*/
 }
 
 .navigation__item {
-    margin-right: 76px;
+  /*  margin-right: 76px;*/
+   /* margin-right: 3%;*/
+   /* padding-right: 1%;*/
     white-space: nowrap;
 }
 
 .navigation__item:last-child {
-    margin-right: 0px;
+   margin-right: 0px;
+  
+
 }
 
 .navigation__link {
@@ -45,10 +90,16 @@
     padding-bottom: 20px;    
 }
 
+.header__search {
+  /*  margin-right: 3%;*/
+  margin-right: 2%;
+}
+
 .search__btn {
     position: relative;
-    margin-left: 76px;
+  /*  margin-left: 76px;*/
     padding-right: 26px;
+   /* margin-left: 170%;*/
     color: #FFF;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -77,8 +128,9 @@
 
 .search__form {
     width: 400px;
-    margin: 30px auto;
-    margin-left: 1030px;
+    /* margin: 30px auto;*/
+    /*  margin-left: 1030px;*/
+    margin: 64px auto;
 }
 
 .search__form input {
@@ -89,6 +141,7 @@
     text-indent: 15px;
     outline: none;
 }
+
 /*
 .form {
     display: none;
@@ -102,21 +155,22 @@
     z-index: 99;
 }
 */
+
 .search__wrapper, 
 .login__wrapper {
-   /* border: 2px solid greenyellow;*/
     width: 100%;
-    position: absolute;
+    top: 101px;
+    position: fixed;
     left: 0;
-    top: 102px;
-   /* color: greenyellow;*/
-    padding: 20px;
-   background-color: #f2f1f0;
-   /* background-color: #e6e6e6;*/
-  /*  background: -webkit-linear-gradient(bottom,#0250c5,#d43f8d);*/
-    z-index: 999;
+    right: 0;
 
+    padding: 20px;
+     background-color: #f2f1f0;
+     box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+  /*  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), #F4E3E9;*/
+    z-index: 999;
 }
+
 .modal-window.nav-desktop {
     display: block;
 }
@@ -135,8 +189,9 @@
     border-radius: 200px;
     background-color: #FFF;
     color: #E43071;
-    margin-left: 37px;
+   /* margin-left: 37px;*/
     margin-right: 41px;
+
 }
 
 .header__navigation-burger {
@@ -168,20 +223,31 @@
 
 
 /* (max-width: 320px) */
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
     .header {
-        width: 320px;
+      /*  width: 320px;*/
         height: 64px;
     }
     
     .header__container {
-        width: 320px;
+      /*  width: 320px;*/
+      justify-content: flex-end;
     }
-    
+    /*
+    .navigation__list {
+        display: flex;
+
+        
+        justify-content: flex-end;
+    }
+*/
     .header__logo {
+        min-width: 102px;
         width: 102px;
         height: 28.5px;
         margin: 20px 16px 16px 16px;
+        margin-right: 30%;
+        right: 0;
     }
 
     .search__btn {
@@ -223,7 +289,7 @@
         height: 20px;
         background-color: transparent;
         padding-right: 20px;
-        margin-left: 18px;
+        margin-left: 10px;
         margin-right: 25px;
     }
     
@@ -254,6 +320,7 @@
     .header__navigation {
      /*   display: none;*/
         position: absolute;
+        width: 100%;
         top: 66px;
         left: 0;
         right: 0;
@@ -290,3 +357,31 @@
     }
 
     }
+
+
+
+    /* (max-width: 320px) */
+@media (max-width: 320px) {
+    .header {
+        height: 64px;
+    }
+
+    .header__logo {
+        margin-right: 0%;
+    }
+
+    .header__navigation {
+        top: 64px;
+    }
+
+    .search__wrapper, 
+    .login__wrapper {
+    top: 64px;
+}
+
+.login__wrapper {
+    height: 100%;
+    padding-bottom: 84px;
+    overflow-y: scroll;
+}
+}
