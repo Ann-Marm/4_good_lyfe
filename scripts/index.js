@@ -227,7 +227,7 @@ let review = document.querySelector('.review');
 let swiperPaginationReviews = document.querySelector('.swiper-pagination-reviews');
 
 let widthForSwiper = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-if ( widthForSwiper > 320 ) {
+if ( widthForSwiper > 780 ) {
   reviewsBlock.classList.remove('swiper');
   reviewsList.classList.remove('swiper-wrapper');
   review.classList.remove('swiper-slide');
@@ -253,11 +253,12 @@ new SwiperReviews('.reviews__block', {
             slidesPerView: 1.2,
             spaceBetween: 18,
         },
-/*
-        768: {
-            slidesPerView: 2,
-        },
 
+        780: {
+            slidesPerView: 1.2,
+            spaceBetween: 18,
+        },
+/*
         1024: {
             slidesPerView: 2,
             spaceBetween: 24,

@@ -102,11 +102,31 @@
         }
     
     .app_mockup_2 {
-        left: 73.7%;
+       left: 73.7%;
         }
 }
 
 
+@media (max-width: 1024px) {
+    .app_mockup_1 {
+        margin-left: 2%;
+        }
+
+    .app_mockup_2 {
+        margin-left: 10%;
+        overflow: hidden;
+        }
+}
+
+/*
+@media (max-width: 780px) {
+    .app__info {
+margin: 0 auto;
+    }
+}
+*/
+
+/* 320 */
 @media (max-width: 320px) {
     .app {
         position: relative;

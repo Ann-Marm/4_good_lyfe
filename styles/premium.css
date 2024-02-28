@@ -70,6 +70,74 @@
 }
 
 
+
+@media (max-width: 1024px) {
+
+    .premium__wrapper{
+    padding-right: 5%;
+    padding-left: 5%;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+  /*  .premium__container {
+        width: 320px;
+    }
+*/
+    .premium__wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 34px;
+        padding-bottom:39px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .premium__info {
+        width: 288px;
+        max-width: 288px;
+        order:2;
+    }
+
+    .premium__title {
+        margin-bottom: 13px;
+    }
+
+    .premium__text {
+        line-height: 200%;
+        margin-bottom: 40px;
+    }
+
+    .premium__photos {
+        width: 288px;
+        max-width: 288px;
+        height: 198px;
+        order:1;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .premium__gym_room {
+        width: 202px;
+        max-width: 202px;
+        height: 135px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .premium__weights {
+        width: 191px;
+        max-width: 191px;
+        height: 128px;
+        top: 70px;
+        left: 84px;   
+    }
+
+}
+
 @media (max-width: 320px) {
   /*  .premium__container {
         width: 320px;
