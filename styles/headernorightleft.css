@@ -7,7 +7,9 @@
    /* top: 0px;
     left: 0;
     right: 0;*/
-    width: 1440px;
+   /* width: 1440px;*/
+   max-width: 1440px;
+   width: 100%;
     z-index: 999;
     height: 101px;
 }
@@ -160,8 +162,10 @@
 .search__wrapper, 
 .login__wrapper {
     width: 100%;
-    top: 101px;
+    max-width: 1440px;
     position: fixed;
+    margin: 0 auto;
+    top: 101px;
     left: 0;
     right: 0;
 
@@ -226,29 +230,19 @@
 /* (max-width: 320px) */
 @media (max-width: 1024px) {
     .header {
-      /*  width: 320px;*/
         height: 64px;
     }
     
     .header__container {
-      /*  width: 320px;*/
       justify-content: flex-end;
     }
-    /*
-    .navigation__list {
-        display: flex;
 
-        
-        justify-content: flex-end;
-    }
-*/
     .header__logo {
         min-width: 102px;
         width: 102px;
         height: 28.5px;
         margin: 20px 16px 16px 16px;
-        margin-right: 30%;
-        right: 0;
+        margin-right: auto;
     }
 
     .search__btn {
@@ -267,13 +261,17 @@
         display: none;
     }
     
+    .modal-window.nav-desktop {
+        display: none;
+    }
+
     .search__wrapper, 
     .login__wrapper {
     top: 64px;
 }
 
     .search__form {
-        width: 100%;
+        width: 280px;
         margin: 0 auto;
         /*margin-left: 0px;*/
     }
@@ -322,7 +320,7 @@
      /*   display: none;*/
         position: absolute;
         width: 100%;
-        top: 66px;
+        top: 64px;
         left: 0;
         right: 0;
         padding: 15px 15px;
@@ -357,33 +355,41 @@
     transition: margin-bottom 0.5s;
     }
 
+    .login__wrapper {
+        height: 100%;
+        padding-bottom: 84px;
+        overflow-y: scroll;
+    }
+
     }
 
 
 
-    /* (max-width: 320px) */
+ 
 @media (max-width: 320px) {
-    .header {
+  /*  .header {
         width: 320px;
         height: 64px;
     }
-
-    .header__logo {
-        margin-right: 0%;
-    }
-
-    .header__navigation {
+*/
+ /*   .header__navigation {
         top: 64px;
     }
+     */
+    /*
+    .modal-window {
+        display: none;
+    }
+*/
 
-    .search__wrapper, 
+ /*   .modal-window.nav-desktop {
+    display: none;
+}
+*/
+ /*   .search__wrapper, 
     .login__wrapper {
     top: 64px;
 }
+*/
 
-.login__wrapper {
-    height: 100%;
-    padding-bottom: 84px;
-    overflow-y: scroll;
-}
 }

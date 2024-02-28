@@ -13,11 +13,12 @@
 
 
 /***********************/
-/*
+
 .hero__container {
-    width: 1440px;
+ /*   width: 1440px;*/
+  max-width: 1440px;
 }
-*/
+
 .hero__helper {
     position: relative;
 
@@ -51,12 +52,14 @@
 */
 
 .hero__item {
-    width: 1440px;
+    /*width: 1440px;*/
+    width: 100%;
     height: 691px;
 }
 
 .product__image-wrapper {
-    width: 1440px;
+   /* width: 1440px;*/
+    width: 100%;
     height: 691px;
 }
 
@@ -64,7 +67,8 @@
     position: relative;
     background-image: url('../images/cathy_1440.jpg');
     background-repeat: no-repeat;
-    background-position: 0px -70px;
+   /* background-position: 0px -70px;*/
+    background-position: 20% -70px;
     /*  width: 1440px;
     height: 691px;*/
 }
@@ -77,7 +81,8 @@
     content: '';
     position: absolute;
     background-color: rgba(45, 40, 36, 0.20);
-    width: 1440px;
+    /*width: 1440px;*/
+    width: 100%;
     height: 691px;
     top:0;
     right: 0;
@@ -92,7 +97,8 @@
 .product__image-wrapper_3 {
     background-image: url('../images/woman_pumping_abs_1440.jpg');
     background-repeat: no-repeat;
-    background-position: 0px -910px;
+   /* background-position: 0px -910px;*/
+    background-position: 60% -910px;
 }
 
 .product__image-wrapper_4 {
@@ -128,7 +134,8 @@
     z-index: 5;
     /*top: calc((691px / 2) - 35px);*/
     top: 241px;
-    left: calc((1440px / 2) - 389px);
+   /* left: calc((1440px / 2) - 389px);*/
+    left: calc((100% / 2) - 389px);
 
     width: 778px;
     font-size: 70px;
@@ -147,7 +154,8 @@
     padding-top: 14px;
 
     top: 421px;
-    left: calc((1440px / 2) - 118.5px);
+  /*  left: calc((1440px / 2) - 118.5px);*/
+    left: calc((100% / 2) - 118.5px);
     z-index: 5;
 }
 
@@ -156,9 +164,52 @@
     background-image: url('../images/hero_bottom_wave.svg');
     background-repeat: no-repeat;
     bottom: 3px;
-    width: 1440px;
+   /* width: 1440px;*/
+    width: 100%;
     height: 34px;
     z-index: 6;
+}
+
+
+@media (max-width: 1024px) {
+.hero {
+    margin-top: 64px;
+   }
+
+   .product__image-wrapper_1 {
+    background-position: 50% -70px;
+}
+
+.product__image-wrapper_3 {
+    background-position: 60% -910px;
+}
+
+.product__image-wrapper_5 {
+    background-position: 35% -220px;
+}
+
+}
+
+@media (max-height: 780px) {
+    .hero__item {
+        height: 80vh;
+       /* max-height: 591px;*/
+       
+    }
+    
+    .product__image-wrapper {
+        height: 80vh;
+      /*  max-height: 591px;*/
+    }
+
+    .hero__title {
+        top: 20vh;
+    }
+
+    .hero__button { 
+        top: 55vh;
+    } 
+
 }
 
 @media (max-width: 320px) {

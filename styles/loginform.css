@@ -184,10 +184,11 @@
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
   .login__wrapper_form form {
     height: auto;
     width: 100%;
+    max-width: 280px;
     margin: 0px auto;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -206,6 +207,5 @@
     position: absolute;
     overflow-y: scroll;
     overflow-y: auto;
-   
   }
 }

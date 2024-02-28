@@ -6,7 +6,8 @@
 
 .app__info {
     padding-top: 112px;
-    padding-left: 238px;
+   /* padding-left: 238px;*/
+    padding-left: 16.5%;
     padding-bottom: 76px;
 }
 
@@ -56,7 +57,8 @@
 
 .app_mockup_1 {
     position: absolute;
-    left: 797px;
+    /*left: 797px;*/
+    left: 55.3%;
     top: -27px;
     width: 232px;
     height: 464px;
@@ -68,7 +70,8 @@
 
 .app_mockup_2 {
     position: absolute;
-    left: 1061px;
+   /* left: 1061px;*/
+    left: 73.7%;
     top: 107px;
     width: 232px;
     height: 384px;
@@ -77,6 +80,31 @@
     background-size: 232px 384px, 203px 372px;    
     background-position: center, top 12px right 50%;
     }
+
+
+
+    @media (max-width: 1300px) {
+    .app__info {
+        padding-left: 10%;
+        padding-top: 9%;
+    }
+
+    .app__title {
+        font-size: 30px;
+    }
+
+    .app__text {
+        width: 40%
+    }
+
+    .app_mockup_1 {
+        left: 50.3%;
+        }
+    
+    .app_mockup_2 {
+        left: 73.7%;
+        }
+}
 
 
 @media (max-width: 320px) {

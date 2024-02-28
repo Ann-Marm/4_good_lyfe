@@ -302,7 +302,7 @@ let width_1 = window.innerWidth || document.documentElement.clientWidth || docum
 function animate_Me(target, moveMe){
   $(target).focus(function(){
     
-    if ( width_1 < 321 ) {
+    if ( width_1 < 1025 ) {
       $(moveMe).animate({"marginLeft":"220px"});
     }
     else {
