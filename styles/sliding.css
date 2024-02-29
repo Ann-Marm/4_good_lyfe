@@ -462,7 +462,7 @@
 
     .sliding__image_2 {
        /* object-position: top 0px right -90px; */
-        object-position:  top 0px right 20px;
+        object-position:  center;
         height: 424px;
     }
     /*
@@ -552,4 +552,40 @@
         width: 257px;
     }
     
+    }
+
+
+
+    @media (max-height: 470px) {
+        .sliding__item {
+            height: 80vh;           
+        }
+
+        .sliding .swiper-slide,
+        .sliding .swiper {
+            height: 80vh; 
+        }
+
+        .sliding__image-wrapper {
+            height: 80vh
+        }
+
+        .sliding__image{
+            height: 80vh
+        }
+    
+        .sliding__title {
+            top: 3vh;
+        }
+
+        .sliding__text {
+            top: 32vh;
+        }
+        .sliding__button { 
+            top: 55vh;
+        } 
+
+        .swiper-pagination-sliding {
+             --swiper-pagination-bottom: 6vh;
+         }
     }

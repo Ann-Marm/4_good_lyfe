@@ -227,6 +227,8 @@
     }
 
 }
+
+
     @media (max-width: 780px) {
     
         .product__image-wrapper_1 {
@@ -365,6 +367,27 @@
     z-index: 5;
 }
 
+}
 
 
+@media (max-height: 500px) {
+    .hero__item {
+        height: 80vh;
+       /* max-height: 591px;*/
+       
+    }
+    
+    .product__image-wrapper {
+        height: 80vh;
+      /*  max-height: 591px;*/
+
+    }
+
+    .hero__title {
+        top: 5vh;
+    }
+
+    .hero__button { 
+        top: 35vh;
+    } 
 }

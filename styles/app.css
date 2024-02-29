@@ -129,7 +129,7 @@ margin: 0 auto;
 /* 320 */
 @media (max-width: 780px) {
     .app {
-        position: relative;
+       /* position: relative;*/
         height: 972px;
     }
     
@@ -145,7 +145,8 @@ margin: 0 auto;
     }
 
     .app__text {
-        width: 269px;
+      /* width: 269px;*/
+        width: 90%;
         line-height: 206%;
         margin-bottom: 28px;
     }
@@ -168,11 +169,15 @@ margin: 0 auto;
     .app__link-appstore {
         background-image: url('../images/app_store.svg');
     }
+
+    .app_mockups {
+        position: relative;
+    }
     
     .app_mockup_1 {
         position: absolute;
         left: 21px;
-        top: 531px;
+      /*  top: 531px;*/
         width: 166px;
         height: 333px;
         background: url('../images/iphone_1.svg') no-repeat center,
@@ -182,9 +187,10 @@ margin: 0 auto;
         }
     
     .app_mockup_2 {
-        position: absolute;
-        left: 210px;
-        top: 658px;
+      position: absolute;
+       /* left: 210px;*/
+       left: 30%;
+       /* top: 658px;*/
         width: 166px;
         height: 333px;
         background: url('../images/iphone_1.svg') no-repeat center,
@@ -193,4 +199,14 @@ margin: 0 auto;
         background-position: center, top 12px right 50%;
         overflow: hidden;
         }
+}
+
+@media (max-width: 560px) {
+    .app_mockup_1 {
+        left: 25%;
+}
+
+    .app_mockup_2 {
+        left: 70%;
+}
 }
