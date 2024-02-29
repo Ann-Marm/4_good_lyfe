@@ -127,7 +127,7 @@ margin: 0 auto;
 */
 
 /* 320 */
-@media (max-width: 320px) {
+@media (max-width: 780px) {
     .app {
         position: relative;
         height: 972px;

@@ -208,15 +208,29 @@ h1, h2, h3, p {
 }
 
 
+@media (max-width: 780px) {
+    .button-slider {
+        width: 208px;
+        height: 56px;
+        font-weight: 600;
+    }
+
+    .button-section-text {
+        width: 287px;
+      
+        height: 60px;
+        padding-top: 10px;
+    }
+}
 
 /* (max-width: 320px)*/
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     body {
-        width: 320px;
+     /*   width: 320px;*/
     }
     
     .container {
-        width: 320px;
+      /*  width: 320px;*/
     }
 
 .button-slider {
