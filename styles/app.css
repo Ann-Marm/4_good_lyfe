@@ -102,7 +102,7 @@
         }
     
     .app_mockup_2 {
-       left: 73.7%;
+        left: 73.7%;
         }
 }
 
@@ -118,18 +118,24 @@
         }
 }
 
-/*
 @media (max-width: 780px) {
     .app__info {
-margin: 0 auto;
-    }
-}
-*/
+        padding-left: 2%;
 
+    }
+
+    .app_mockup_1 {
+        margin-left: 0.5%;
+        }
+
+    .app_mockup_2 {
+        margin-left: 14%;
+
+        }
+}
 /* 320 */
-@media (max-width: 780px) {
+@media (max-width: 660px) {
     .app {
-       /* position: relative;*/
         height: 972px;
     }
     
@@ -145,7 +151,6 @@ margin: 0 auto;
     }
 
     .app__text {
-      /* width: 269px;*/
         width: 90%;
         line-height: 206%;
         margin-bottom: 28px;
@@ -177,7 +182,6 @@ margin: 0 auto;
     .app_mockup_1 {
         position: absolute;
         left: 21px;
-      /*  top: 531px;*/
         width: 166px;
         height: 333px;
         background: url('../images/iphone_1.svg') no-repeat center,
@@ -187,10 +191,10 @@ margin: 0 auto;
         }
     
     .app_mockup_2 {
-      position: absolute;
-       /* left: 210px;*/
-       left: 30%;
-       /* top: 658px;*/
+        position: absolute;
+        /* left: 210px;*/
+        left: 30%;
+        /* top: 658px;*/
         width: 166px;
         height: 333px;
         background: url('../images/iphone_1.svg') no-repeat center,
@@ -201,7 +205,7 @@ margin: 0 auto;
         }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 480px) {
     .app_mockup_1 {
         left: 25%;
 }

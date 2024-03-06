@@ -1,18 +1,14 @@
-/*.about__container {
-    width: 1440px;
-}
-*/
+
 .about__wrapper {
     display: flex;
     flex-wrap: nowrap;
-  /*  justify-content: space-between;*/
-   justify-content: space-around;
+    justify-content: space-around;
     align-items: center;
     padding-top: 108px;
     padding-bottom: 122px;
     /*padding-right: 140px;*/
     padding-right: 9.7%;
-   /* padding-left: 140px;*/
+    /* padding-left: 140px;*/
     padding-left: 9.7%;
 }
 
@@ -71,7 +67,7 @@
 
 
 @media (max-width: 1024px) {
-     
+
     .about__wrapper{
     padding-right: 5%;
     padding-left: 5%;
@@ -79,12 +75,8 @@
 }
 
 
-
 @media (max-width: 780px) {
- /*   .about__container {
-        width: 320px;
-    }
-*/
+
     .about__wrapper {
         flex-direction: column;
         align-items: center;
@@ -107,7 +99,7 @@
         height: 248px;
         background-image: url('../images/male_lifting_weights_mob.jpg');
         background-position: top 0px left 0px;
-       /* background-position: top -10px left -40px;
+        /* background-position: top -10px left -40px;
         background-size: 130%;*/
     }
     
@@ -119,8 +111,8 @@
         top: 95px;
         left: 116px;
         background-position: top 0px left 0px;
-      /*  background-position: top -70px left -10px;*/
-      /*  background-size: 130%;*/
+        /*  background-position: top -70px left -10px;*/
+        /*  background-size: 130%;*/
     }
 
     .about__info {
@@ -138,11 +130,9 @@
     }
 }
 
-@media (max-width: 320px) {
- /*   .about__container {
-        width: 320px;
-    }
-*/
+/* 320*/
+@media (max-width: 480px) {
+
     .about__wrapper {
         flex-direction: column;
         align-items: start;
@@ -165,7 +155,7 @@
         height: 248px;
         background-image: url('../images/male_lifting_weights_mob.jpg');
         background-position: top 0px left 0px;
-       /* background-position: top -10px left -40px;
+        /* background-position: top -10px left -40px;
         background-size: 130%;*/
     }
     
@@ -177,8 +167,8 @@
         top: 95px;
         left: 116px;
         background-position: top 0px left 0px;
-      /*  background-position: top -70px left -10px;*/
-      /*  background-size: 130%;*/
+        /*  background-position: top -70px left -10px;*/
+        /*  background-size: 130%;*/
     }
 
     .about__info {
