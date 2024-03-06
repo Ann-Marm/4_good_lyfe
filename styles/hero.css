@@ -309,7 +309,7 @@
 .hero__button {
     width: 208px;
     padding-top: 9px;
-    top: 202px;
+    top: 270px;
     left: calc((100% / 2) - 104px);
     z-index: 5;
 }
